@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercise 8</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .container {
+                background-color: blue;
+                height: 70vh;
+                width: 90vw;
+                position: relative;
+
+            }
+
+            .circular {
+                background-color: red;
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                border: none;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                animation: sachinX 3s linear infinite  ,
+                sachinY 1s ease-out infinite alternate;
+                
+                
+           
+                    
+         
+
+
+            }
+
+   @keyframes sachinX{
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+   }
+   @keyframes sachinY{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+   }
+          
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="circular">
+
+            </div>
+        </div>
+    </body>
+
+</html>
